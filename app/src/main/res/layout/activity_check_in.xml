@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".CheckIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:paddingTop="20dp"
+            android:layout_height="match_parent">
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="150dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:backgroundTint="#CF4321"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    android:id="@+id/catLimpieza"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/limp"
+                        android:layout_height="match_parent" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="98dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:id="@+id/catFontaneria"
+                    android:backgroundTint="#866AB8"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/font"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="98dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:id="@+id/catElectricista"
+                    android:backgroundTint="#866AB8"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/electri"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="98dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:id="@+id/catCarpinteria"
+                    android:backgroundTint="#866AB8"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/carpin"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="98dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:id="@+id/catDescuentos"
+                    android:backgroundTint="#866AB8"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/desc"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="98dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:id="@+id/catGotPremium"
+                    android:backgroundTint="#866AB8"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/gotrew"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="98dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:id="@+id/catLimpiezaMuebles"
+                    android:backgroundTint="#866AB8"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/muebles"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="98dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="4"
+                    android:layout_margin="12dp"
+                    android:clickable="true"
+                    android:id="@+id/catFumigacion"
+                    android:backgroundTint="#866AB8"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    android:paddingBottom="25dp"
+                    app:cardElevation="6dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/fumig"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

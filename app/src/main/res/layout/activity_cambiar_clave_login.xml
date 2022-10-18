@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".CambiarClave">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtV_cambioClave"
+                style="@style/labelsRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#353535"
+                android:fontFamily="@font/montserrat"
+                android:text="¿Desea cambiar su contraseña?"
+                android:layout_marginBottom="32dp"
+                android:textSize="20sp"
+                android:letterSpacing="0.2"
+                android:textStyle="normal" />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="261dp"
+                android:layout_height="202dp"
+                android:contentDescription="@string/img_cambiarclave"
+                android:src="@drawable/lock3" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/edt_usuario"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_proffile_icon"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Nombre de usuario"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColorHighlight="#199fcd"
+                android:textColorLink="#199fcd"
+                android:textSize="17dp" />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/edt_cambioClave_userName"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="17dp"
+                android:hint="@string/contrase_a_actual"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/custom_lock_icon"
+                android:background="@drawable/custom_input"
+                android:textColorHighlight="#199fcd"
+                android:textColorLink="#199fcd" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_cambioClave_Password1"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="17dp"
+                android:hint="Nueva contraseña"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/custom_lock_icon"
+                android:background="@drawable/custom_input"
+                android:textColorHighlight="#199fcd"
+                android:textColorLink="#199fcd" />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_cambioClave_Password2"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="17dp"
+                android:hint="Confirmar nueva contaseña"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/custom_lock_icon"
+                android:background="@drawable/custom_input"
+                android:textColorHighlight="#199fcd"
+                android:textColorLink="#199fcd" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="14dp">
+
+            <Button
+                android:id="@+id/btn_cambioClave_confirmar"
+                android:layout_width="239dp"
+                android:height="56dp"
+                android:letterSpacing="0.2"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="cambiaClave"
+                android:text="@string/btn_confirmar"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

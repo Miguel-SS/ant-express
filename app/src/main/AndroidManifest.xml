@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laboratorio03">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcherg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcherg"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Verificacion2"
+            android:exported="false" />
+        <activity
+            android:name=".Verificacion"
+            android:exported="false" />
+        <activity
+            android:name=".GotPremium"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Logica.DetalleUsuario" />
+        <activity
+            android:name=".Reservas"
+            android:label="Mis Órdenes" />
+        <activity
+            android:name=".PagarBoleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComprarBoleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BuscaVuelos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inicio"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CambiarClaveLogin"
+            android:label="Cambiar clave"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetalleSolicitud"
+            android:label="Detalle Vuelo" />
+        <activity
+            android:name=".Vuelos"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CambiarClave"
+            android:label="Cambiar Clave"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intermedia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CheckIn" />
+        <activity
+            android:name=".Register"
+            android:label="Registro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityForm"
+            android:label="Formulario" />
+        <activity
+            android:name=".EditJobAplication"
+            android:label="Editar Solicitud" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

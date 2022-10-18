@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".Register">
+
+    <TableRow
+        style="@style/rowForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/logog" />
+
+    </TableRow>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        android:paddingTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/edt_fullName"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="@string/nombreCompleto"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat"
+                />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/edt_userName"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/nombre_de_usuario"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_input"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat"
+                />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/formEmail"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_input"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/montserrat"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/edt_num"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="8"
+                android:hint="Número de Teléfono"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_input"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/montserrat"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/edt_Password1"
+                android:hint="@string/contraseña"
+                android:layout_weight="1"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_input"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserrat"
+                />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/edt_Password2"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/confirmar_password"
+                android:layout_width="311dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_input"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserrat"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_registrarse"
+                android:layout_width="357dp"
+                android:layout_height="59dp"
+                android:layout_column="0"
+                android:backgroundTint="#538A97"
+                android:gravity="center"
+                android:text="@string/btn_registrarse"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:onClick="registrar"
+                android:fontFamily="@font/montserrat"
+                />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:gravity="center"
+                android:text="Al hacer click en Registrarme acepta nuestros términos y condiciones"
+                android:fontFamily="@font/montserrat"
+                />
+
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

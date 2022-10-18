@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intermedia">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:titleTextColor="#FFFFFF"/>
+
+        <include layout="@layout/content_solicitudes"/>
+
+
+    </FrameLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:paddingTop="695dp"
+        android:paddingLeft="-8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <TableRow
+            android:background="@color/colorBar">
+
+            <Button
+                android:id="@+id/vuelos"
+                android:layout_width="140dp"
+                android:layout_height="78dp"
+                android:layout_column="0"
+                android:backgroundTint="@color/colorBar"
+                android:drawableTop="@drawable/ic_baseline_home_24"
+                android:gravity="center"
+                android:text="Inicio"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/checkin"
+                android:layout_width="140dp"
+                android:layout_height="78dp"
+                android:layout_column="2"
+                android:backgroundTint="@color/colorBar"
+                android:drawableTop="@drawable/ic_baseline_search_24"
+                android:gravity="center"
+                android:text="Explorar"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/misreservas"
+                android:layout_width="140dp"
+                android:layout_height="78dp"
+                android:layout_column="1"
+                android:backgroundTint="@color/colorBar"
+                android:drawableTop="@drawable/ic_baseline_shopping_cart_24"
+                android:gravity="center"
+                android:text="Mis órdenes"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+    </TableLayout>
+
+ <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="25dp"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/navdrawer1"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

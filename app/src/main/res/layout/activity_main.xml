@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="718dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableRow
+            style="@style/rowForm"
+            android:layout_marginBottom="25dp"
+            android:paddingTop="0dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/logog" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:paddingLeft="49dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_userName"
+                android:layout_width="311dp"
+                android:layout_height="70dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_proffile_icon"
+                android:drawablePadding="20dp"
+                android:hint="Usuario"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColorHighlight="#199fcd"
+                android:textColorLink="#199fcd" />
+        </TableRow>
+
+        <TableRow
+            style="@style/rowForm"
+            android:paddingLeft="48dp"
+            android:paddingRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_Password1"
+                android:layout_width="311dp"
+                android:layout_height="70dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_lock_icon"
+                android:drawablePadding="20dp"
+                android:hint="@string/contraseña"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recordarme" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="450dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/cambioContraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="69dp"
+                android:layout_marginLeft="98dp"
+                android:text="¿Olvidó su contraseña?"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="450dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/registrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:text="Registrarse"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="130dp"
+            android:layout_height="245dp"
+            android:layout_marginTop="9dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_inic"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:backgroundTint="#538A97"
+                android:gravity="center"
+                android:onClick="login"
+                android:text="@string/btn_signIn"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="450dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_veri"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:gravity="center"
+                android:background="@drawable/verif"
+                android:onClick="login"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

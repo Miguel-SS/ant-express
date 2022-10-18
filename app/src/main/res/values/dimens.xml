@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="ic_delete">30dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+</resources>
