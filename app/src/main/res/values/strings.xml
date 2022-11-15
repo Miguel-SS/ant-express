@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Got Help</string>
+    <string name="app_name">Ant Express</string>
     <string name="Login">Iniciar Sesión</string>
     <string name="usuario">Nombre de usuario</string>
     <string name="clave">Contraseña</string>
